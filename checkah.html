@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="http://codeorigin.jquery.com/jquery-1.10.2.min.js"></script>
+    <script></script>
+</head>
+
+<body>
+<script type="text/javascript">
+    $(function () {
+
+        var Data = {
+            myPets: null
+        }
+
+        $.ajax({
+            url: "http://eu.battle.net/api/wow/character/steamwheedle-cartel/Kyraka?fields=pets",
+            type: 'GET',
+            dataType: "jsonp",
+            jsonp: "jsonp",
+            success: function (data) {
+                console.log(data);
+                Data.pets = data;
+            }
+        });
+
+    });
+</script>
+</body>
+</html>
