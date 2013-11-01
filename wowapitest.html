@@ -85,12 +85,27 @@
             console.log(data);
         });
         //The PVP leaderboard api provides detailed PVP leaderboard information.
-        wow.getPVPLeaderboard("3v3", function(data) {
+        wow.getPVPLeaderboard("3v3", function (data) {
+            console.log(data);
+        });
+//        The realm status API allows developers to retrieve realm status information. This information is limited to whether or not the realm is up, the type and state of the realm, the current population, and the status of the two world pvp zones.
+//        There are no required query string parameters when accessing this resource, although the "realms" query string parameter can optionally be passed to limit the realms returned to one or more.
+        wow.getRealmStatus(null, function (data) {
+            console.log(data);
+        });
+        wow.getRealmStatus("steamwheedle-cartel,medivh", function (data) {
+            console.log(data);
+        });
+        //The recipe API provides basic recipe information.
+        wow.getRecipe(33994, function (data) {
+            console.log(data);
+        });
+        //The spell API provides some information about spells.
+        wow.getSpell(8056, function (data) {
             console.log(data);
         });
 
-
-    })
+    });
 </script>
 </body>
 </html>

@@ -236,6 +236,30 @@ WOWAPI.prototype = (function () {
             return this._(apiCall)("leaderboard/" + bracket, cbk);
         },
 
+        getRealmStatus: function(realms, cbk) {
+            if (realms) {
+                return this._(apiCall)("realm/status?realms=" + realms, cbk);
+            } else {
+                return this._(apiCall)("realm/status", cbk);
+            }
+        },
+
+        getRecipe: function (recipeId, cbk) {
+            return this._(apiCall)("recipe/" + recipeId, cbk);
+        },
+
+        getSpell: function (spellId, cbk) {
+            return this._(apiCall)("spell/" + spellId, cbk);
+        },
+
+        getBattlegroups: function(cbk) {
+            if (this.battlegroups) {
+                cbk(this.battlegroups);
+            } else {
+                return this._(apiCall)("/api/wow/data/battlegroups/");
+            }
+        },
+
 
         _: function (callback) {
             var self = this;
