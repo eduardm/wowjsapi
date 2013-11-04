@@ -1,25 +1,10 @@
-wowjsapi
-========
-
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <title>JSDoc: Global</title>
-    
-    <script src="scripts/prettify/prettify.js"> </script>
-    <script src="scripts/prettify/lang-css.js"> </script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
-    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
 </head>
-
 <body>
-
 <div id="main">
-    
     <h1 class="page-title">WowApi JS official documentation</h1>
     
     
@@ -102,7 +87,7 @@ wowjsapi
     
     
     <div class="description">
-        Returns the achievement data for given achievement. <a href="http://blizzard.github.io/api-wow-docs/#achievement-api "> Wraps this API function</a>
+        Returns the achievement data for given achievement. <a href="docs/http://blizzard.github.io/api-wow-docs/#achievement-api "> Wraps this API function</a>
     </div>
     
 
@@ -165,7 +150,7 @@ wowjsapi
             <td class="type">
             
                 
-<span class="param-type"><a href="global.html#responseCallback">responseCallback</a></span>
+<span class="param-type"><a href="docs/global.html#responseCallback">responseCallback</a></span>
 
 
             
@@ -206,7 +191,7 @@ wowjsapi
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="wowapi.js.html">wowapi.js</a>, <a href="wowapi.js.html#line115">line 115</a>
+        <a href="docs/wowapi.js.html">wowapi.js</a>, <a href="docs/wowapi.js.html#line115">line 115</a>
     </li></ul></dd>
     
     
@@ -247,7 +232,7 @@ wowjsapi
     
     
     <div class="description">
-        Returns the current auction house data for given realm. <a href="http://blizzard.github.io/api-wow-docs/#auction-api "> Wraps this API function</a>
+        Returns the current auction house data for given realm. <a href="docs/http://blizzard.github.io/api-wow-docs/#auction-api "> Wraps this API function</a>
     </div>
     
 
@@ -310,7 +295,7 @@ wowjsapi
             <td class="type">
             
                 
-<span class="param-type"><a href="global.html#responseCallback">responseCallback</a></span>
+<span class="param-type"><a href="docs/global.html#responseCallback">responseCallback</a></span>
 
 
             
@@ -351,7 +336,7 @@ wowjsapi
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="wowapi.js.html">wowapi.js</a>, <a href="wowapi.js.html#line126">line 126</a>
+        <a href="docs/wowapi.js.html">wowapi.js</a>, <a href="docs/wowapi.js.html#line126">line 126</a>
     </li></ul></dd>
     
     
@@ -392,7 +377,7 @@ wowjsapi
     
     
     <div class="description">
-        Returns details about given ability id. <a href="http://blizzard.github.io/api-wow-docs/#battlepet-api/abilities "> Wraps this API function</a>
+        Returns details about given ability id. <a href="docs/http://blizzard.github.io/api-wow-docs/#battlepet-api/abilities "> Wraps this API function</a>
     </div>
     
 
@@ -455,7 +440,7 @@ wowjsapi
             <td class="type">
             
                 
-<span class="param-type"><a href="global.html#responseCallback">responseCallback</a></span>
+<span class="param-type"><a href="docs/global.html#responseCallback">responseCallback</a></span>
 
 
             
@@ -496,7 +481,7 @@ wowjsapi
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="wowapi.js.html">wowapi.js</a>, <a href="wowapi.js.html#line137">line 137</a>
+        <a href="docs/wowapi.js.html">wowapi.js</a>, <a href="docs/wowapi.js.html#line137">line 137</a>
     </li></ul></dd>
     
     
@@ -537,7 +522,7 @@ wowjsapi
     
     
     <div class="description">
-        Returns details about given species id. <a href="http://blizzard.github.io/api-wow-docs/#battlepet-api/species "> Wraps this API function</a>
+        Returns details about given species id. <a href="docs/http://blizzard.github.io/api-wow-docs/#battlepet-api/species "> Wraps this API function</a>
     </div>
     
 
@@ -600,7 +585,7 @@ wowjsapi
             <td class="type">
             
                 
-<span class="param-type"><a href="global.html#responseCallback">responseCallback</a></span>
+<span class="param-type"><a href="docs/global.html#responseCallback">responseCallback</a></span>
 
 
             
@@ -641,7 +626,7 @@ wowjsapi
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="wowapi.js.html">wowapi.js</a>, <a href="wowapi.js.html#line148">line 148</a>
+        <a href="docs/wowapi.js.html">wowapi.js</a>, <a href="docs/wowapi.js.html#line148">line 148</a>
     </li></ul></dd>
     
     
@@ -682,7 +667,7 @@ wowjsapi
     
     
     <div class="description">
-        Returns details about given battle pet parameters. <a href="http://blizzard.github.io/api-wow-docs/#battlepet-api/stats "> Wraps this API function</a>
+        Returns details about given battle pet parameters. <a href="docs/http://blizzard.github.io/api-wow-docs/#battlepet-api/stats "> Wraps this API function</a>
     </div>
     
 
@@ -722,7 +707,7 @@ wowjsapi
             <td class="type">
             
                 
-<span class="param-type"><a href="global.html#battlePetObject">battlePetObject</a></span>
+<span class="param-type"><a href="docs/global.html#battlePetObject">battlePetObject</a></span>
 
 
             
@@ -745,7 +730,7 @@ wowjsapi
             <td class="type">
             
                 
-<span class="param-type"><a href="global.html#responseCallback">responseCallback</a></span>
+<span class="param-type"><a href="docs/global.html#responseCallback">responseCallback</a></span>
 
 
             
@@ -786,7 +771,7 @@ wowjsapi
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="wowapi.js.html">wowapi.js</a>, <a href="wowapi.js.html#line167">line 167</a>
+        <a href="docs/wowapi.js.html">wowapi.js</a>, <a href="docs/wowapi.js.html#line167">line 167</a>
     </li></ul></dd>
     
     
@@ -835,7 +820,7 @@ wowjsapi
     
     
     <div class="description">
-        Returns the current challenge mode leaderboard for given realm or for region. <a href="http://blizzard.github.io/api-wow-docs/#challenge-mode-api "> Wraps this API function</a>
+        Returns the current challenge mode leaderboard for given realm or for region. <a href="docs/http://blizzard.github.io/api-wow-docs/#challenge-mode-api "> Wraps this API function</a>
     </div>
     
 
@@ -901,7 +886,7 @@ wowjsapi
             <td class="type">
             
                 
-<span class="param-type"><a href="global.html#responseCallback">responseCallback</a></span>
+<span class="param-type"><a href="docs/global.html#responseCallback">responseCallback</a></span>
 
 
             
@@ -942,7 +927,7 @@ wowjsapi
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="wowapi.js.html">wowapi.js</a>, <a href="wowapi.js.html#line184">line 184</a>
+        <a href="docs/wowapi.js.html">wowapi.js</a>, <a href="docs/wowapi.js.html#line184">line 184</a>
     </li></ul></dd>
     
     
@@ -985,7 +970,7 @@ wowApiInstance.getChallengeLeaderboard(null, function (data) {console.log(data);
     
     
     <div class="description">
-        Returns character profile based on a characterOptions object. <a href="http://blizzard.github.io/api-wow-docs/#character-profile-api "> Wraps this API function</a>
+        Returns character profile based on a characterOptions object. <a href="docs/http://blizzard.github.io/api-wow-docs/#character-profile-api "> Wraps this API function</a>
     </div>
     
 
@@ -1025,7 +1010,7 @@ wowApiInstance.getChallengeLeaderboard(null, function (data) {console.log(data);
             <td class="type">
             
                 
-<span class="param-type"><a href="global.html#characterOptions">characterOptions</a></span>
+<span class="param-type"><a href="docs/global.html#characterOptions">characterOptions</a></span>
 
 
             
@@ -1048,7 +1033,7 @@ wowApiInstance.getChallengeLeaderboard(null, function (data) {console.log(data);
             <td class="type">
             
                 
-<span class="param-type"><a href="global.html#responseCallback">responseCallback</a></span>
+<span class="param-type"><a href="docs/global.html#responseCallback">responseCallback</a></span>
 
 
             
@@ -1089,7 +1074,7 @@ wowApiInstance.getChallengeLeaderboard(null, function (data) {console.log(data);
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="wowapi.js.html">wowapi.js</a>, <a href="wowapi.js.html#line202">line 202</a>
+        <a href="docs/wowapi.js.html">wowapi.js</a>, <a href="docs/wowapi.js.html#line202">line 202</a>
     </li></ul></dd>
     
     
@@ -1133,7 +1118,7 @@ wowApiInstance.getCharacterProfile({realm: "steamwheedle-cartel", characterName:
     
     
     <div class="description">
-        Returns guild profile based on a guildOptions object. <a href="http://blizzard.github.io/api-wow-docs/#guild-profile-api "> Wraps this API function</a>
+        Returns guild profile based on a guildOptions object. <a href="docs/http://blizzard.github.io/api-wow-docs/#guild-profile-api "> Wraps this API function</a>
     </div>
     
 
@@ -1173,7 +1158,7 @@ wowApiInstance.getCharacterProfile({realm: "steamwheedle-cartel", characterName:
             <td class="type">
             
                 
-<span class="param-type"><a href="global.html#guildOptions">guildOptions</a></span>
+<span class="param-type"><a href="docs/global.html#guildOptions">guildOptions</a></span>
 
 
             
@@ -1196,7 +1181,7 @@ wowApiInstance.getCharacterProfile({realm: "steamwheedle-cartel", characterName:
             <td class="type">
             
                 
-<span class="param-type"><a href="global.html#responseCallback">responseCallback</a></span>
+<span class="param-type"><a href="docs/global.html#responseCallback">responseCallback</a></span>
 
 
             
@@ -1237,7 +1222,7 @@ wowApiInstance.getCharacterProfile({realm: "steamwheedle-cartel", characterName:
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="wowapi.js.html">wowapi.js</a>, <a href="wowapi.js.html#line256">line 256</a>
+        <a href="docs/wowapi.js.html">wowapi.js</a>, <a href="docs/wowapi.js.html#line256">line 256</a>
     </li></ul></dd>
     
     
@@ -1292,7 +1277,7 @@ wowApiInstance.getCharacterProfile({realm: "steamwheedle-cartel", characterName:
     
     
     <div class="description">
-        Returns details about given item set id. <a href="http://blizzard.github.io/api-wow-docs/#item-api/item-set "> Wraps this API function</a>
+        Returns details about given item set id. <a href="docs/http://blizzard.github.io/api-wow-docs/#item-api/item-set "> Wraps this API function</a>
     </div>
     
 
@@ -1355,7 +1340,7 @@ wowApiInstance.getCharacterProfile({realm: "steamwheedle-cartel", characterName:
             <td class="type">
             
                 
-<span class="param-type"><a href="global.html#responseCallback">responseCallback</a></span>
+<span class="param-type"><a href="docs/global.html#responseCallback">responseCallback</a></span>
 
 
             
@@ -1396,7 +1381,7 @@ wowApiInstance.getCharacterProfile({realm: "steamwheedle-cartel", characterName:
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="wowapi.js.html">wowapi.js</a>, <a href="wowapi.js.html#line231">line 231</a>
+        <a href="docs/wowapi.js.html">wowapi.js</a>, <a href="docs/wowapi.js.html#line231">line 231</a>
     </li></ul></dd>
     
     
@@ -1437,7 +1422,7 @@ wowApiInstance.getCharacterProfile({realm: "steamwheedle-cartel", characterName:
     
     
     <div class="description">
-        Returns details about given item id. <a href="http://blizzard.github.io/api-wow-docs/#item-api/individual-item "> Wraps this API function</a>
+        Returns details about given item id. <a href="docs/http://blizzard.github.io/api-wow-docs/#item-api/individual-item "> Wraps this API function</a>
     </div>
     
 
@@ -1500,7 +1485,7 @@ wowApiInstance.getCharacterProfile({realm: "steamwheedle-cartel", characterName:
             <td class="type">
             
                 
-<span class="param-type"><a href="global.html#responseCallback">responseCallback</a></span>
+<span class="param-type"><a href="docs/global.html#responseCallback">responseCallback</a></span>
 
 
             
@@ -1541,7 +1526,7 @@ wowApiInstance.getCharacterProfile({realm: "steamwheedle-cartel", characterName:
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="wowapi.js.html">wowapi.js</a>, <a href="wowapi.js.html#line220">line 220</a>
+        <a href="docs/wowapi.js.html">wowapi.js</a>, <a href="docs/wowapi.js.html#line220">line 220</a>
     </li></ul></dd>
     
     
@@ -1582,7 +1567,7 @@ wowApiInstance.getCharacterProfile({realm: "steamwheedle-cartel", characterName:
     
     
     <div class="description">
-        Returns the PVP leaderboard for given bracket. <a href="http://blizzard.github.io/api-wow-docs/#pvp-api "> Wraps this API function</a>
+        Returns the PVP leaderboard for given bracket. <a href="docs/http://blizzard.github.io/api-wow-docs/#pvp-api "> Wraps this API function</a>
     </div>
     
 
@@ -1645,7 +1630,7 @@ wowApiInstance.getCharacterProfile({realm: "steamwheedle-cartel", characterName:
             <td class="type">
             
                 
-<span class="param-type"><a href="global.html#responseCallback">responseCallback</a></span>
+<span class="param-type"><a href="docs/global.html#responseCallback">responseCallback</a></span>
 
 
             
@@ -1686,7 +1671,7 @@ wowApiInstance.getCharacterProfile({realm: "steamwheedle-cartel", characterName:
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="wowapi.js.html">wowapi.js</a>, <a href="wowapi.js.html#line274">line 274</a>
+        <a href="docs/wowapi.js.html">wowapi.js</a>, <a href="docs/wowapi.js.html#line274">line 274</a>
     </li></ul></dd>
     
     
@@ -1727,7 +1712,7 @@ wowApiInstance.getCharacterProfile({realm: "steamwheedle-cartel", characterName:
     
     
     <div class="description">
-        Returns the realm(s) status. <a href="http://blizzard.github.io/api-wow-docs/#realm-status-api "> Wraps this API function</a>
+        Returns the realm(s) status. <a href="docs/http://blizzard.github.io/api-wow-docs/#realm-status-api "> Wraps this API function</a>
     </div>
     
 
@@ -1793,7 +1778,7 @@ wowApiInstance.getCharacterProfile({realm: "steamwheedle-cartel", characterName:
             <td class="type">
             
                 
-<span class="param-type"><a href="global.html#responseCallback">responseCallback</a></span>
+<span class="param-type"><a href="docs/global.html#responseCallback">responseCallback</a></span>
 
 
             
@@ -1834,7 +1819,7 @@ wowApiInstance.getCharacterProfile({realm: "steamwheedle-cartel", characterName:
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="wowapi.js.html">wowapi.js</a>, <a href="wowapi.js.html#line292">line 292</a>
+        <a href="docs/wowapi.js.html">wowapi.js</a>, <a href="docs/wowapi.js.html#line292">line 292</a>
     </li></ul></dd>
     
     
@@ -1882,7 +1867,7 @@ wowApiInstance.getCharacterProfile({realm: "steamwheedle-cartel", characterName:
     
     
     <div class="description">
-        Returns details about given recipe id. <a href="http://blizzard.github.io/api-wow-docs/#recipe-api "> Wraps this API function</a>
+        Returns details about given recipe id. <a href="docs/http://blizzard.github.io/api-wow-docs/#recipe-api "> Wraps this API function</a>
     </div>
     
 
@@ -1945,7 +1930,7 @@ wowApiInstance.getCharacterProfile({realm: "steamwheedle-cartel", characterName:
             <td class="type">
             
                 
-<span class="param-type"><a href="global.html#responseCallback">responseCallback</a></span>
+<span class="param-type"><a href="docs/global.html#responseCallback">responseCallback</a></span>
 
 
             
@@ -1986,7 +1971,7 @@ wowApiInstance.getCharacterProfile({realm: "steamwheedle-cartel", characterName:
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="wowapi.js.html">wowapi.js</a>, <a href="wowapi.js.html#line307">line 307</a>
+        <a href="docs/wowapi.js.html">wowapi.js</a>, <a href="docs/wowapi.js.html#line307">line 307</a>
     </li></ul></dd>
     
     
@@ -2027,7 +2012,7 @@ wowApiInstance.getCharacterProfile({realm: "steamwheedle-cartel", characterName:
     
     
     <div class="description">
-        Returns details about spell recipe id. <a href="http://blizzard.github.io/api-wow-docs/#spell-api "> Wraps this API function</a>
+        Returns details about spell recipe id. <a href="docs/http://blizzard.github.io/api-wow-docs/#spell-api "> Wraps this API function</a>
     </div>
     
 
@@ -2090,7 +2075,7 @@ wowApiInstance.getCharacterProfile({realm: "steamwheedle-cartel", characterName:
             <td class="type">
             
                 
-<span class="param-type"><a href="global.html#responseCallback">responseCallback</a></span>
+<span class="param-type"><a href="docs/global.html#responseCallback">responseCallback</a></span>
 
 
             
@@ -2131,7 +2116,7 @@ wowApiInstance.getCharacterProfile({realm: "steamwheedle-cartel", characterName:
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="wowapi.js.html">wowapi.js</a>, <a href="wowapi.js.html#line318">line 318</a>
+        <a href="docs/wowapi.js.html">wowapi.js</a>, <a href="docs/wowapi.js.html#line318">line 318</a>
     </li></ul></dd>
     
     
@@ -2388,7 +2373,7 @@ wowApiInstance.getCharacterProfile({realm: "steamwheedle-cartel", characterName:
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="wowapi.js.html">wowapi.js</a>, <a href="wowapi.js.html#line344">line 344</a>
+        <a href="docs/wowapi.js.html">wowapi.js</a>, <a href="docs/wowapi.js.html#line344">line 344</a>
     </li></ul></dd>
     
     
@@ -2604,7 +2589,7 @@ titles    A list of the titles obtained by the character including the currently
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="wowapi.js.html">wowapi.js</a>, <a href="wowapi.js.html#line346">line 346</a>
+        <a href="docs/wowapi.js.html">wowapi.js</a>, <a href="docs/wowapi.js.html#line346">line 346</a>
     </li></ul></dd>
     
     
@@ -2807,7 +2792,7 @@ challenge    The top 3 challenge mode guild run times for each challenge mode ma
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="wowapi.js.html">wowapi.js</a>, <a href="wowapi.js.html#line348">line 348</a>
+        <a href="docs/wowapi.js.html">wowapi.js</a>, <a href="docs/wowapi.js.html#line348">line 348</a>
     </li></ul></dd>
     
     
@@ -2910,7 +2895,7 @@ challenge    The top 3 challenge mode guild run times for each challenge mode ma
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="wowapi.js.html">wowapi.js</a>, <a href="wowapi.js.html#line342">line 342</a>
+        <a href="docs/wowapi.js.html">wowapi.js</a>, <a href="docs/wowapi.js.html#line342">line 342</a>
     </li></ul></dd>
     
     
@@ -2949,13 +2934,13 @@ challenge    The top 3 challenge mode guild run times for each challenge mode ma
 </div>
 
 <nav>
-    <h2><a href="index.html">Index</a></h2><h3>Classes</h3><ul><li><a href="WOWAPI.html">WOWAPI</a></li></ul><h3>Global</h3><ul><li><a href="global.html#getAchievement">getAchievement</a></li><li><a href="global.html#getAuctions">getAuctions</a></li><li><a href="global.html#getBattlePetAbility">getBattlePetAbility</a></li><li><a href="global.html#getBattlePetSpecies">getBattlePetSpecies</a></li><li><a href="global.html#getBattlePetStats">getBattlePetStats</a></li><li><a href="global.html#getChallengeLeaderboard">getChallengeLeaderboard</a></li><li><a href="global.html#getCharacterProfile">getCharacterProfile</a></li><li><a href="global.html#getGuildProfile">getGuildProfile</a></li><li><a href="global.html#getIemSet">getIemSet</a></li><li><a href="global.html#getItem">getItem</a></li><li><a href="global.html#getPVPLeaderboard">getPVPLeaderboard</a></li><li><a href="global.html#getRealmStatus">getRealmStatus</a></li><li><a href="global.html#getRecipe">getRecipe</a></li><li><a href="global.html#getSpell">getSpell</a></li></ul>
+    <h2><a href="docs/index.html">Index</a></h2><h3>Classes</h3><ul><li><a href="docs/WOWAPI.html">WOWAPI</a></li></ul><h3>Global</h3><ul><li><a href="docs/global.html#getAchievement">getAchievement</a></li><li><a href="docs/global.html#getAuctions">getAuctions</a></li><li><a href="docs/global.html#getBattlePetAbility">getBattlePetAbility</a></li><li><a href="docs/global.html#getBattlePetSpecies">getBattlePetSpecies</a></li><li><a href="docs/global.html#getBattlePetStats">getBattlePetStats</a></li><li><a href="docs/global.html#getChallengeLeaderboard">getChallengeLeaderboard</a></li><li><a href="docs/global.html#getCharacterProfile">getCharacterProfile</a></li><li><a href="docs/global.html#getGuildProfile">getGuildProfile</a></li><li><a href="docs/global.html#getIemSet">getIemSet</a></li><li><a href="docs/global.html#getItem">getItem</a></li><li><a href="docs/global.html#getPVPLeaderboard">getPVPLeaderboard</a></li><li><a href="docs/global.html#getRealmStatus">getRealmStatus</a></li><li><a href="docs/global.html#getRecipe">getRecipe</a></li><li><a href="docs/global.html#getSpell">getSpell</a></li></ul>
 </nav>
 
 <br clear="both">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.0-dev</a> on Mon Nov 04 2013 17:42:42 GMT+0100 (CET)
+    Documentation generated by <a href="docs/https://github.com/jsdoc3/jsdoc">JSDoc 3.3.0-dev</a> on Mon Nov 04 2013 17:42:42 GMT+0100 (CET)
 </footer>
 
 <script> prettyPrint(); </script>
