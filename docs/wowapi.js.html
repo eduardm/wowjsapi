@@ -1,4 +1,31 @@
-/**
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: wowapi.js</title>
+    
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+    
+    <h1 class="page-title">Source: wowapi.js</h1>
+    
+    
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source"><code>/**
  * @class WOWAPI
  * @classdesc WOWAPI is a javascript wrapper around the World of Warcraft public API (http://blizzard.github.io/api-wow-docs/).
  * The Blizzard Community Platform API provides a number of resources for developers and Wow enthusiasts to gather data about their characters, guilds and arena teams.
@@ -17,10 +44,10 @@
  * @description Instantiate a WOWAPI object that can be used to call underlying API methods.
  * The data available through the API is limited to the region that it is in.
  * Hence, US APIs accessed through us.battle.net will only contain data within US battlegroups and realms.
- * @param {string=} [region="eu"] region Specifies the region that will be used for the API calls. May be <code>["us", "eu", "kr", "tw", "ch"]</code>.
+ * @param {string=} [region="eu"] region Specifies the region that will be used for the API calls. May be &lt;code>["us", "eu", "kr", "tw", "ch"]&lt;/code>.
  * @param {string=} [locale=First value from selected region] locale Specifies the locale to be used with the request.
  * Support for locales is limited to those supported on the World of Warcraft community sites.
- * Possible values are based on the region:  <code>{
+ * Possible values are based on the region:  &lt;code>{
  "us": ["en_US",
  "es_MX",
  "pt_BR"],
@@ -34,8 +61,8 @@
  "kr": ["ko_KR"],
  "tw": ["zh_TW"],
  "ch": ["zh_CN"]
- }</code>
- * @example <code>var wowApiInstance = new WOWAPI("eu", "en_GB");</code>
+ }&lt;/code>
+ * @example &lt;code>var wowApiInstance = new WOWAPI("eu", "en_GB");&lt;/code>
  */
 function WOWAPI(region, locale) {
     'use strict';
@@ -110,7 +137,7 @@ WOWAPI.prototype = (function () {
          * @description Returns the achievement data for given achievement. {@linkcode http://blizzard.github.io/api-wow-docs/#achievement-api | Wraps this API function}
          * @param {Integer} achievementId The achievement number
          * @param {responseCallback} callbackFunction A callback function that will be triggered when we have the data
-         * @example <code>wowApiInstance.getAchievement(2144, function(data) {console.log(data)});</code>
+         * @example &lt;code>wowApiInstance.getAchievement(2144, function(data) {console.log(data)});&lt;/code>
          */
         getAchievement: function (achievementId, callbackFunction) {
             return this._(apiCall)("achievement/" + achievementId, callbackFunction);
@@ -121,7 +148,7 @@ WOWAPI.prototype = (function () {
          * @description Returns the current auction house data for given realm. {@linkcode http://blizzard.github.io/api-wow-docs/#auction-api | Wraps this API function}
          * @param {String} realm The realm name
          * @param {responseCallback} callbackFunction A callback function that will be triggered when we have the data
-         * @example <code>wowApiInstance.getAuctions('medivh', function(data) {console.log(data)});</code>
+         * @example &lt;code>wowApiInstance.getAuctions('medivh', function(data) {console.log(data)});&lt;/code>
          */
         getAuctions: function (realm, callbackFunction) {
             return this._(apiCall)("auction/data/" + realm, callbackFunction);
@@ -132,7 +159,7 @@ WOWAPI.prototype = (function () {
          * @description Returns details about given ability id. {@linkcode http://blizzard.github.io/api-wow-docs/#battlepet-api/abilities | Wraps this API function}
          * @param {Integer} abilityId
          * @param {responseCallback} callbackFunction A callback function that will be triggered when we have the data
-         * @example <code>wowApiInstance.getBattlePetAbility(640, function(data) {console.log(data)});</code>
+         * @example &lt;code>wowApiInstance.getBattlePetAbility(640, function(data) {console.log(data)});&lt;/code>
          */
         getBattlePetAbility: function (abilityId, callbackFunction) {
             return this._(apiCall)("battlePet/ability/" + abilityId, callbackFunction);
@@ -143,7 +170,7 @@ WOWAPI.prototype = (function () {
          * @description Returns details about given species id. {@linkcode http://blizzard.github.io/api-wow-docs/#battlepet-api/species | Wraps this API function}
          * @param {Integer} speciesId
          * @param {responseCallback} callbackFunction A callback function that will be triggered when we have the data
-         * @example <code>wowApiInstance.getBattlePetAbility(640, function(data) {console.log(data)});</code>
+         * @example &lt;code>wowApiInstance.getBattlePetAbility(640, function(data) {console.log(data)});&lt;/code>
          */
         getBattlePetSpecies: function (speciesId, callbackFunction) {
             return this._(apiCall)("battlePet/species/" + speciesId, callbackFunction);
@@ -154,7 +181,7 @@ WOWAPI.prototype = (function () {
          * @description Returns details about given battle pet parameters. {@linkcode http://blizzard.github.io/api-wow-docs/#battlepet-api/stats | Wraps this API function}
          * @param {battlePetObject} speciesDetails
          * @param {responseCallback} callbackFunction A callback function that will be triggered when we have the data
-         * @example <code><pre>
+         * @example &lt;code>&lt;pre>
          wowApiInstance.getBattlePetStats({
              speciesId: 640,
              level: 25,
@@ -162,7 +189,7 @@ WOWAPI.prototype = (function () {
              qualityId: 1
          }, function (data) {
             console.log(data);
-         });</pre></code>
+         });&lt;/pre>&lt;/code>
          */
         getBattlePetStats: function (speciesDetails, callbackFunction) {
             var speciesId = speciesDetails.speciesId,
@@ -177,9 +204,9 @@ WOWAPI.prototype = (function () {
          * @description Returns the current challenge mode leaderboard for given realm or for region. {@linkcode http://blizzard.github.io/api-wow-docs/#challenge-mode-api | Wraps this API function}
          * @param {(String|null)} realm The realm name. If it is null, it will return region leaderboard
          * @param {responseCallback} callbackFunction A callback function that will be triggered when we have the data
-         * @example <code>wowApiInstance.getChallengeLeaderboard("steamwheedle-cartel", function (data) {console.log(data);});<br />
+         * @example &lt;code>wowApiInstance.getChallengeLeaderboard("steamwheedle-cartel", function (data) {console.log(data);});&lt;br />
          * wowApiInstance.getChallengeLeaderboard(null, function (data) {console.log(data);});
-         * </code>
+         * &lt;/code>
          */
         getChallengeLeaderboard: function (realm, callbackFunction) {
             if (realm) {
@@ -194,10 +221,10 @@ WOWAPI.prototype = (function () {
          * @description Returns character profile based on a characterOptions object. {@linkcode http://blizzard.github.io/api-wow-docs/#character-profile-api | Wraps this API function}
          * @param {characterOptions} characterOptions Contains the options describing what to retrieve
          * @param {responseCallback} callbackFunction A callback function that will be triggered when we have the data
-         * @example <code>wowApiInstance.getCharacterProfile({realm: "steamwheedle-cartel",characterName: "HarapAlb"}, function (data) {console.log(data);});<br />
-         * wowApiInstance.getCharacterProfile({realm: "steamwheedle-cartel",characterName: "HarapAlb",fields: "items"}, function (data) { console.log(data); });<br />
-         * wowApiInstance.getCharacterProfile({realm: "steamwheedle-cartel", characterName: "HarapAlb", fields: "items, pets, stats, titles"}, function (data) {console.log(data);});<br />
-         * </code>
+         * @example &lt;code>wowApiInstance.getCharacterProfile({realm: "steamwheedle-cartel",characterName: "HarapAlb"}, function (data) {console.log(data);});&lt;br />
+         * wowApiInstance.getCharacterProfile({realm: "steamwheedle-cartel",characterName: "HarapAlb",fields: "items"}, function (data) { console.log(data); });&lt;br />
+         * wowApiInstance.getCharacterProfile({realm: "steamwheedle-cartel", characterName: "HarapAlb", fields: "items, pets, stats, titles"}, function (data) {console.log(data);});&lt;br />
+         * &lt;/code>
          */
         getCharacterProfile: function (characterOptions, callbackFunction) {
             var fields = characterOptions.fields,
@@ -215,7 +242,7 @@ WOWAPI.prototype = (function () {
          * @description Returns details about given item id. {@linkcode http://blizzard.github.io/api-wow-docs/#item-api/individual-item | Wraps this API function}
          * @param {Integer} itemId
          * @param {responseCallback} callbackFunction A callback function that will be triggered when we have the data
-         * @example <code>wowApiInstance.getItem(18803, function(data) {console.log(data)});</code>
+         * @example &lt;code>wowApiInstance.getItem(18803, function(data) {console.log(data)});&lt;/code>
          */
         getItem: function (itemId, callbackFunction) {
             return this._(apiCall)("item/" + itemId, callbackFunction);
@@ -226,7 +253,7 @@ WOWAPI.prototype = (function () {
          * @description Returns details about given item set id. {@linkcode http://blizzard.github.io/api-wow-docs/#item-api/item-set | Wraps this API function}
          * @param {Integer} setId
          * @param {responseCallback} callbackFunction A callback function that will be triggered when we have the data
-         * @example <code>wowApiInstance.getItem(1060, function(data) {console.log(data)});</code>
+         * @example &lt;code>wowApiInstance.getItem(1060, function(data) {console.log(data)});&lt;/code>
          */
         getIemSet: function (setId, callbackFunction) {
             return this._(apiCall)("item/set/" + setId, callbackFunction);
@@ -237,13 +264,13 @@ WOWAPI.prototype = (function () {
          * @description Returns guild profile based on a guildOptions object. {@linkcode http://blizzard.github.io/api-wow-docs/#guild-profile-api | Wraps this API function}
          * @param {guildOptions} guildOptions Contains the options describing what to retrieve
          * @param {responseCallback} callbackFunction A callback function that will be triggered when we have the data
-         * @example <code><pre>
+         * @example &lt;code>&lt;pre>
          wowApiInstance.getGuildProfile({
              realm: "steamwheedle-cartel",
              guildName: "House of Elements"
          }, function (data) {
             console.log(data);
-         });<br />
+         });&lt;br />
          wowApiInstance.getGuildProfile({
              realm: "steamwheedle-cartel",
              guildName: "House of Elements",
@@ -251,7 +278,7 @@ WOWAPI.prototype = (function () {
          }, function (data) {
             console.log(data);
          });
-         * </pre></code>
+         * &lt;/pre>&lt;/code>
          */
         getGuildProfile: function (guildOptions, callbackFunction) {
             var fields = guildOptions.fields,
@@ -269,7 +296,7 @@ WOWAPI.prototype = (function () {
          * @description Returns the PVP leaderboard for given bracket. {@linkcode http://blizzard.github.io/api-wow-docs/#pvp-api | Wraps this API function}
          * @param {String} bracket The bracket for the leaderborad. One of: "2v2" | "3v3" | "5v5" | "rbg"
          * @param {responseCallback} callbackFunction A callback function that will be triggered when we have the data
-         * @example <code>wowApiInstance.getPVPLeaderboard("3v3", function (data) { console.log(data); });</code>
+         * @example &lt;code>wowApiInstance.getPVPLeaderboard("3v3", function (data) { console.log(data); });&lt;/code>
          */
         getPVPLeaderboard: function (bracket, callbackFunction) {
             return this._(apiCall)("leaderboard/" + bracket, callbackFunction);
@@ -280,14 +307,14 @@ WOWAPI.prototype = (function () {
          * @description Returns the realm(s) status. {@linkcode http://blizzard.github.io/api-wow-docs/#realm-status-api | Wraps this API function}
          * @param {String|null} realms The list of realms to get status, or null for all realms from region
          * @param {responseCallback} callbackFunction A callback function that will be triggered when we have the data
-         * @example <code><pre>
+         * @example &lt;code>&lt;pre>
           wowApiInstance.getRealmStatus(null, function (data) {
              console.log(data);
-          });<br />
+          });&lt;br />
           wow.getRealmStatus("steamwheedle-cartel,medivh", function (data) {
              console.log(data);
           });
-         * </pre></code>
+         * &lt;/pre>&lt;/code>
          */
         getRealmStatus: function (realms, callbackFunction) {
             if (realms) {
@@ -302,7 +329,7 @@ WOWAPI.prototype = (function () {
          * @description Returns details about given recipe id. {@linkcode http://blizzard.github.io/api-wow-docs/#recipe-api | Wraps this API function}
          * @param {Integer} recipeId
          * @param {responseCallback} callbackFunction A callback function that will be triggered when we have the data
-         * @example <code>wowApiInstance.getRecipe(33994, function(data) {console.log(data)});</code>
+         * @example &lt;code>wowApiInstance.getRecipe(33994, function(data) {console.log(data)});&lt;/code>
          */
         getRecipe: function (recipeId, callbackFunction) {
             return this._(apiCall)("recipe/" + recipeId, callbackFunction);
@@ -313,7 +340,7 @@ WOWAPI.prototype = (function () {
          * @description Returns details about spell recipe id. {@linkcode http://blizzard.github.io/api-wow-docs/#spell-api | Wraps this API function}
          * @param {Integer} spellId
          * @param {responseCallback} callbackFunction A callback function that will be triggered when we have the data
-         * @example <code>wowApiInstance.getSpell(8056, function(data) {console.log(data)});</code>
+         * @example &lt;code>wowApiInstance.getSpell(8056, function(data) {console.log(data)});&lt;/code>
          */
         getSpell: function (spellId, callbackFunction) {
             return this._(apiCall)("spell/" + spellId, callbackFunction);
@@ -359,7 +386,7 @@ WOWAPI.prototype = (function () {
      * @property  {String=} [fields=""] String with one or more fields from the profile separated by comma.
      * If it is missing, only the summary will be returned.
      * Possible values:
-     * <pre>
+     * &lt;pre>
      * achievements    A map of achievement data including completion timestamps and criteria information.
      * appearance    A map of values that describes the face, features and helm/cloak display preferences and attributes.
      * feed    The activity feed of the character.
@@ -377,7 +404,7 @@ WOWAPI.prototype = (function () {
      * stats    A map of character attributes and stats.
      * talents    A list of talent structures.
      * titles    A list of the titles obtained by the character including the currently selected title.
-     </pre>
+     &lt;/pre>
      */
 
     /**
@@ -387,12 +414,12 @@ WOWAPI.prototype = (function () {
      * @property  {String=} [fields=""] String with one or more fields from the profile separated by comma.
      * If it is missing, only the summary will be returned.
      * Possible values:
-     * <pre>
+     * &lt;pre>
      * members    A list of characters that are a member of the guild
      * achievements    A set of data structures that describe the achievements earned by the guild.
      * news    A set of data structures that describe the news feed of the guild.
      * challenge    The top 3 challenge mode guild run times for each challenge mode map.
-     </pre>
+     &lt;/pre>
      */
 
 
@@ -446,7 +473,7 @@ $(function () {
             STR_ON_READY_STATE_CHANGE = STR_ON + "readystatechange",
             STR_READY_STATE = "readyState",
             STR_REMOVE_CHILD = "removeChild",
-            STR_SCRIPT_TAG = "<script>",
+            STR_SCRIPT_TAG = "&lt;script>",
             STR_SUCCESS = "success",
             STR_TIMEOUT = "timeout",
 
@@ -485,8 +512,8 @@ $(function () {
         // opera demands sniffing :/
             opera = win.opera,
 
-        // IE < 10
-            oldIE = !!$("<div>").html("<!--[if IE]><i><![endif]-->").find("i").length;
+        // IE &lt; 10
+            oldIE = !!$("&lt;div>").html("&lt;!--[if IE]>&lt;i>&lt;![endif]-->").find("i").length;
 
         // ###################### MAIN FUNCTION ##
         function jsonp(xOptions) {
@@ -613,7 +640,7 @@ $(function () {
                     script[ STR_CHARSET ] = charset;
                 }
 
-                opera && opera.version() < 11.60 ?
+                opera && opera.version() &lt; 11.60 ?
                     // onerror is not supported: do not set as async and assume in-order execution.
                     // Add a trailing script to emulate the event
                     ( ( scriptAfter = $(STR_SCRIPT_TAG)[ 0 ] ).text = "document.getElementById('" + script.id + "')." + STR_ON_ERROR + "()" )
@@ -685,4 +712,26 @@ $(function () {
         $.jsonp = jsonp;
 
     })(jQuery);
-});
+});</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Index</a></h2><h3>Classes</h3><ul><li><a href="WOWAPI.html">WOWAPI</a></li></ul><h3>Global</h3><ul><li><a href="global.html#getAchievement">getAchievement</a></li><li><a href="global.html#getAuctions">getAuctions</a></li><li><a href="global.html#getBattlePetAbility">getBattlePetAbility</a></li><li><a href="global.html#getBattlePetSpecies">getBattlePetSpecies</a></li><li><a href="global.html#getBattlePetStats">getBattlePetStats</a></li><li><a href="global.html#getChallengeLeaderboard">getChallengeLeaderboard</a></li><li><a href="global.html#getCharacterProfile">getCharacterProfile</a></li><li><a href="global.html#getGuildProfile">getGuildProfile</a></li><li><a href="global.html#getIemSet">getIemSet</a></li><li><a href="global.html#getItem">getItem</a></li><li><a href="global.html#getPVPLeaderboard">getPVPLeaderboard</a></li><li><a href="global.html#getRealmStatus">getRealmStatus</a></li><li><a href="global.html#getRecipe">getRecipe</a></li><li><a href="global.html#getSpell">getSpell</a></li></ul>
+</nav>
+
+<br clear="both">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.0-dev</a> on Mon Nov 04 2013 17:42:41 GMT+0100 (CET)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
