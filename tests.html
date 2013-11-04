@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>WOWAPI QUnit tests</title>
+    <link rel="stylesheet" href="http://code.jquery.com/qunit/qunit-git.css">
+    <script type="text/javascript" src="http://codeorigin.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="wowapi.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/qunit/qunit-git.js"></script>
+
+
+</head>
+<body>
+<div id="qunit"></div>
+<div id="qunit-fixture"></div>
+<script>
+
+    var wowApiTestInstance = new WOWAPI();
+
+    module('Initialization')
+    test('WOWAPI constructor', function () {
+        equal(wowApiTestInstance.region, 'eu', 'Region should be "eu');
+        equal(wowApiTestInstance.locale, 'en_GB', 'Locale should be en_GB');
+        equal(wowApiTestInstance.API_URL, 'http://eu.battle.net/api/wow/', 'API URL should be http://eu.battle.net/api/wow/');
+    });
+
+    module('API integrity')
+    asyncTest('getAchievement()', function () {
+        wowApiTestInstance.getAchievement(2144, function (response) {
+            start();
+            equal(response.accountWide, true, 'Achievement should be account wide');
+            equal(response.criteria.length, 9, 'Achievement should have 9 requirements');
+            equal(response.description, "Complete the world events achievements listed below.", "Description should match");
+            equal(response.id, 2144, 'Id should match');
+        });
+    });
+    asyncTest('getBattlePetAbility()', function () {
+        wowApiTestInstance.getBattlePetAbility(640, function (response) {
+            start();
+            equal(response.cooldown, 0, 'Cooldown should match');
+            equal(response.name, "Toxic Smoke", "Name should match");
+            equal(response.id, 640, 'Id should match');
+        });
+    });
+    asyncTest('getBattlePetSpecies()', function () {
+        wowApiTestInstance.getBattlePetSpecies(640, function (response) {
+            start();
+            equal(response.abilities.length, 6, 'Number of abilities should match');
+            equal(response.description, "With the extra large surface area of their legs, snowshoe hares are able to effortlessly hop along the snow while their pursuers get bogged down in the drifts.", "Description should match");
+            equal(response.name, "Snowshoe Hare", "Name should match");
+            equal(response.speciesId, 640, 'Id should match');
+        });
+    });
+    asyncTest('getBattlePetStats()', function () {
+        wowApiTestInstance.getBattlePetStats({
+            speciesId: 640,
+            level: 25,
+            breedId: 3,
+            qualityId: 1
+        }, function (response) {
+            start();
+            equal(response.breedId, 3, 'Id should match');
+            equal(response.level, 25, "Level should match");
+            equal(response.health, 1269, "Health should match");
+            equal(response.power, 206, "Power should match");
+            equal(response.speciesId, 640, 'Id should match');
+        });
+    });
+</script>
+</body>
+</html>

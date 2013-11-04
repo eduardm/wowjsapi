@@ -73,11 +73,10 @@ WOWAPI.prototype = (function () {
     /**
      * @private
      * @param path
+     * This is private method use internally to call the official API
      */
     function apiCall(path, successCallback, errorCallback) {
-        console.log(path)
         var url = this.API_URL + path;
-        console.log(url)
         $.jsonp({
             url: url,
             dataType: "json",
@@ -103,8 +102,8 @@ WOWAPI.prototype = (function () {
          * @param achievementId Integer the achievement number
          * @return {JSON object describing the achievement}
          */
-        getAchievement: function (achievementId, cbk) {
-            return this._(apiCall)("achievement/" + achievementId, cbk);
+        getAchievement: function (achievementId, callbackFunction) {
+            return this._(apiCall)("achievement/" + achievementId, callbackFunction);
         },
 
         /**
@@ -112,38 +111,38 @@ WOWAPI.prototype = (function () {
          * @param realm String the realm name
          * @return {JSON object with the content of the AH for given realm}
          */
-        getAuctions: function (realm, cbk) {
-            return this._(apiCall)("auction/data/" + realm, cbk);
+        getAuctions: function (realm, callbackFunction) {
+            return this._(apiCall)("auction/data/" + realm, callbackFunction);
         },
 
         /**
          *
          * @param abilityId
-         * @param cbk
+         * @param callbackFunction
          * @return {*}
          */
-        getBattlePetAbility: function (abilityId, cbk) {
-            return this._(apiCall)("battlePet/ability/" + abilityId, cbk);
+        getBattlePetAbility: function (abilityId, callbackFunction) {
+            return this._(apiCall)("battlePet/ability/" + abilityId, callbackFunction);
         },
 
 
-        getBattlePetSpecies: function (speciesId, cbk) {
-            return this._(apiCall)("battlePet/species/" + speciesId, cbk);
+        getBattlePetSpecies: function (speciesId, callbackFunction) {
+            return this._(apiCall)("battlePet/species/" + speciesId, callbackFunction);
         },
 
-        getBattlePetStats: function (speciesDetails, cbk) {
+        getBattlePetStats: function (speciesDetails, callbackFunction) {
             var speciesId = speciesDetails.speciesId,
                 level = speciesDetails.level || 1,
                 breedId = speciesDetails.breedId || 3,
                 qualityId = speciesDetails.qualityId || 1;
-            return this._(apiCall)("battlePet/stats/" + speciesId + "?level=" + level + "&breedId=" + breedId + "&qualityId=" + qualityId, cbk);
+            return this._(apiCall)("battlePet/stats/" + speciesId + "?level=" + level + "&breedId=" + breedId + "&qualityId=" + qualityId, callbackFunction);
         },
 
-        getChallengeLeaderboard: function (realm, cbk) {
+        getChallengeLeaderboard: function (realm, callbackFunction) {
             if (realm) {
-                return this._(apiCall)("challenge/" + realm, cbk);
+                return this._(apiCall)("challenge/" + realm, callbackFunction);
             } else {
-                return this._(apiCall)("challenge/region", cbk);
+                return this._(apiCall)("challenge/region", callbackFunction);
             }
         },
 
@@ -175,26 +174,26 @@ WOWAPI.prototype = (function () {
              talents    A list of talent structures.
              titles    A list of the titles obtained by the character including the currently selected title.
          *
-         * @param cbk
+         * @param callbackFunction
          * @return {*}
          */
-        getCharacterProfile: function (characterOptions, cbk) {
+        getCharacterProfile: function (characterOptions, callbackFunction) {
             var fields = characterOptions.fields,
                 realm = characterOptions.realm,
                 characterName = characterOptions.characterName
             if (fields) {
-                return this._(apiCall)("character/" + realm + "/" + characterName + "?fields=" + fields, cbk);
+                return this._(apiCall)("character/" + realm + "/" + characterName + "?fields=" + fields, callbackFunction);
             } else {
-                return this._(apiCall)("character/" + realm + "/" + characterName, cbk);
+                return this._(apiCall)("character/" + realm + "/" + characterName, callbackFunction);
             }
         },
 
-        getItem: function (itemId, cbk) {
-            return this._(apiCall)("item/" + itemId, cbk);
+        getItem: function (itemId, callbackFunction) {
+            return this._(apiCall)("item/" + itemId, callbackFunction);
         },
 
-        getIemSet: function (setId, cbk) {
-            return this._(apiCall)("item/set/" + setId, cbk);
+        getIemSet: function (setId, callbackFunction) {
+            return this._(apiCall)("item/set/" + setId, callbackFunction);
         },
 
         /**
@@ -212,49 +211,49 @@ WOWAPI.prototype = (function () {
                  news	A set of data structures that describe the news feed of the guild.
                  challenge	The top 3 challenge mode guild run times for each challenge mode map.
               *
-              * @param cbk
+              * @param callbackFunction
               * @return {*}
               */
-        getGuildProfile: function (guildOptions, cbk) {
+        getGuildProfile: function (guildOptions, callbackFunction) {
             var fields = guildOptions.fields,
                 realm = guildOptions.realm,
                 guildName = guildOptions.guildName
             if (fields) {
-                return this._(apiCall)("guild/" + realm + "/" + guildName + "?fields=" + fields, cbk);
+                return this._(apiCall)("guild/" + realm + "/" + guildName + "?fields=" + fields, callbackFunction);
             } else {
-                return this._(apiCall)("guild/" + realm + "/" + guildName, cbk);
+                return this._(apiCall)("guild/" + realm + "/" + guildName, callbackFunction);
             }
         },
 
         /**
          * @required
          * @param bracket String The bracket for the leaderborad. One of: "2v2" | "3v3" | "5v5" | "rbg"
-         * @param cbk
+         * @param callbackFunction
          * @return {*}
          */
-        getPVPLeaderboard: function(bracket, cbk) {
-            return this._(apiCall)("leaderboard/" + bracket, cbk);
+        getPVPLeaderboard: function(bracket, callbackFunction) {
+            return this._(apiCall)("leaderboard/" + bracket, callbackFunction);
         },
 
-        getRealmStatus: function(realms, cbk) {
+        getRealmStatus: function(realms, callbackFunction) {
             if (realms) {
-                return this._(apiCall)("realm/status?realms=" + realms, cbk);
+                return this._(apiCall)("realm/status?realms=" + realms, callbackFunction);
             } else {
-                return this._(apiCall)("realm/status", cbk);
+                return this._(apiCall)("realm/status", callbackFunction);
             }
         },
 
-        getRecipe: function (recipeId, cbk) {
-            return this._(apiCall)("recipe/" + recipeId, cbk);
+        getRecipe: function (recipeId, callbackFunction) {
+            return this._(apiCall)("recipe/" + recipeId, callbackFunction);
         },
 
-        getSpell: function (spellId, cbk) {
-            return this._(apiCall)("spell/" + spellId, cbk);
+        getSpell: function (spellId, callbackFunction) {
+            return this._(apiCall)("spell/" + spellId, callbackFunction);
         },
 
-        getBattlegroups: function(cbk) {
+        getBattlegroups: function(callbackFunction) {
             if (this.battlegroups) {
-                cbk(this.battlegroups);
+                callbackFunction(this.battlegroups);
             } else {
                 return this._(apiCall)("/api/wow/data/battlegroups/");
             }
