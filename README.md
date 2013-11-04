@@ -1,7 +1,6 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Global</title>
 </head>
 <body>
 <div id="main">
@@ -10,7 +9,261 @@
     
 
 
+<section>
+    
+<header>
+    <h2>
+    WOWAPI
+    </h2>
+    
+        <div class="class-description">WOWAPI is a javascript wrapper around the World of Warcraft public API (http://blizzard.github.io/api-wow-docs/).
+The Blizzard Community Platform API provides a number of resources for developers and Wow enthusiasts to gather data about their characters, guilds and arena teams.
+This class leverages the usage of that API to the JS developers by wrapping all API calls in simple JS methods.</div>
+    
+</header>  
 
+<article>
+    <div class="container-overview">
+    
+    
+    
+        
+<dt>
+    <h4 class="name" id="WOWAPI"><span class="type-signature"></span>new WOWAPI<span class="signature">(<span class="optional">region</span>, <span class="optional">locale</span>)</span><span class="type-signature"></span></h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        Instantiate a WOWAPI object that can be used to call underlying API methods.
+The data available through the API is limited to the region that it is in.
+Hence, US APIs accessed through us.battle.net will only contain data within US battlegroups and realms.
+    </div>
+    
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		<th>Argument</th>
+		
+		
+		
+		<th>Default</th>
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>region</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                    
+                
+                </td>
+            
+            
+            
+                <td class="default">
+                
+                    "eu"
+                
+                </td>
+            
+            
+            <td class="description last">region Specifies the region that will be used for the API calls. May be <code>["us", "eu", "kr", "tw", "ch"]</code>.</td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>locale</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+                    
+                
+                    
+                
+                </td>
+            
+            
+            
+                <td class="default">
+                
+                    First value from selected region
+                
+                </td>
+            
+            
+            <td class="description last">locale Specifies the locale to be used with the request.
+Support for locales is limited to those supported on the World of Warcraft community sites.
+Possible values are based on the region:  <code>{
+ "us": ["en_US",
+ "es_MX",
+ "pt_BR"],
+ "eu": ["en_GB",
+ "es_ES",
+ "fr_FR",
+ "ru_RU",
+ "de_DE",
+ "pt_PT",
+ "it_IT"],
+ "kr": ["ko_KR"],
+ "tw": ["zh_TW"],
+ "ch": ["zh_CN"]
+ }</code></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>eduardm (https://github.com/eduardm/wowjsapi)</li>
+        </ul>
+    </dd>
+    
+    
+    
+    
+    
+    <dt class="tag-license">License:</dt>
+    <dd class="tag-license"><ul class="dummy"><li>Creative Commons Zero (CC0)</li></ul></dd>
+    
+    
+    
+    
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="wowapi.js.html">wowapi.js</a>, <a href="wowapi.js.html#line40">line 40</a>
+    </li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+        <h5>Example</h5>
+        
+    <pre class="prettyprint"><code> <code>var wowApiInstance = new WOWAPI("eu", "en_GB");</code></code></pre>
+
+    
+</dd>
+
+    
+    </div>
+    
+    
+    
+    
+    
+    
+        <h3 class="subsection-title">Requires</h3>
+        
+        <ul>
+            <li>module:JQuery</li>
+        </ul>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</article>
+
+</section> 
 <section>
     
 <header>
