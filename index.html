@@ -31,37 +31,2281 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
+        <p>
+</p>
+    <div>
+    <h1>
+<a name="wowapi-js-official-documentation" class="anchor" href="#wowapi-js-official-documentation"><span class="octicon octicon-link"></span></a>WowApi JS official documentation</h1>
+    
+    
+
+
+  <h2>
+<a name="----wowapi----" class="anchor" href="#----wowapi----"><span class="octicon octicon-link"></span></a>
+    WOWAPI
+    </h2>
+    
+        <div>WOWAPI is a javascript wrapper around the World of Warcraft public API (http://blizzard.github.io/api-wow-docs/).
+The Blizzard Community Platform API provides a number of resources for developers and Wow enthusiasts to gather data about their characters, guilds and arena teams.
+This class leverages the usage of that API to the JS developers by wrapping all API calls in simple JS methods.</div>
+    
+  <div>
+    
+    
+    
+        
+<dt>
+    <h4>
+<a name="new-wowapiregion-locale" class="anchor" href="#new-wowapiregion-locale"><span class="octicon octicon-link"></span></a>new WOWAPI(region, locale)</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div>
+        Instantiate a WOWAPI object that can be used to call underlying API methods.
+The data available through the API is limited to the region that it is in.
+Hence, US APIs accessed through us.battle.net will only contain data within US battlegroups and realms.
+    </div>
+    
+
+    
+    
+    
+    
+    
+        <h5>
+<a name="parameters" class="anchor" href="#parameters"><span class="octicon octicon-link"></span></a>Parameters:</h5>
+        
+
+<table>
+<thead><tr>
+<th>Name</th>
+        
+        
+        <th>Type</th>
+        
+        
+        <th>Argument</th>
+        
+        
+        
+        <th>Default</th>
+        
+        
+        <th>Description</th>
+    </tr></thead>
+<tbody>
+<tr>
+<td><code>region</code></td>
+            
+            
+            <td>
+            
+                
+string
+
+
+            
+            </td>
+            
+            
+                <td>
+                
+                    &lt;optional&gt;<br>
+</td>
+            
+            
+            
+                <td>
+                
+                    "eu"
+                
+                </td>
+            
+            
+            <td>region Specifies the region that will be used for the API calls. May be <code>["us", "eu", "kr", "tw", "ch"]</code>.</td>
+        </tr>
+<tr>
+<td><code>locale</code></td>
+            
+            
+            <td>
+            
+                
+string
+
+
+            
+            </td>
+            
+            
+                <td>
+                
+                    &lt;optional&gt;<br>
+</td>
+            
+            
+            
+                <td>
+                
+                    First value from selected region
+                
+                </td>
+            
+            
+            <td>locale Specifies the locale to be used with the request.
+Support for locales is limited to those supported on the World of Warcraft community sites.
+Possible values are based on the region:  <code>{
+ "us": ["en_US",
+ "es_MX",
+ "pt_BR"],
+ "eu": ["en_GB",
+ "es_ES",
+ "fr_FR",
+ "ru_RU",
+ "de_DE",
+ "pt_PT",
+ "it_IT"],
+ "kr": ["ko_KR"],
+ "tw": ["zh_TW"],
+ "ch": ["zh_CN"]
+ }</code>
+</td>
+        </tr>
+</tbody>
+</table>
+<dl>
+<dt>Author:</dt>
+    <dd>
+        <ul>
+<li>eduardm (https://github.com/eduardm/wowjsapi)</li>
+        </ul>
+</dd>
+    
+    
+    
+    
+    
+    <dt>License:</dt>
+    <dd><ul><li>Creative Commons Zero (CC0)</li></ul></dd>
+    
+    
+    
+    
+    
+    <dt>Source:</dt>
+    <dd><ul><li>
+        <a href="wowapi.js.html">wowapi.js</a>, <a href="wowapi.js.html#line40">line 40</a>
+    </li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+<h5>
+<a name="example" class="anchor" href="#example"><span class="octicon octicon-link"></span></a>Example</h5>
+        
+    <pre><code> <code>var wowApiInstance = new WOWAPI("eu", "en_GB");</code></code></pre>
+
+    
+</dd>
+
+    
+    </div>
+    
+    
+    
+    
+    
+    
         <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+<a name="requires" class="anchor" href="#requires"><span class="octicon octicon-link"></span></a>Requires</h3>
+        
+        <ul>
+<li>module:JQuery</li>
+        </ul>    <h2>
+<a name="--------" class="anchor" href="#--------"><span class="octicon octicon-link"></span></a>
+    
+    </h2>
+    
+  <div>
+    
+    
+    
+        
+        
+        
+<dl></dl>
+</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <h3>
+<a name="methods" class="anchor" href="#methods"><span class="octicon octicon-link"></span></a>Methods</h3>
+        
+        <dl>
+<dt>
+    <h4>
+<a name="getachievementachievementid-callbackfunction" class="anchor" href="#getachievementachievementid-callbackfunction"><span class="octicon octicon-link"></span></a>getAchievement(achievementId, callbackFunction)</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div>
+        Returns the achievement data for given achievement. <a href="docs/http://blizzard.github.io/api-wow-docs/#achievement-api%20"> Wraps this API function</a>
+    </div>
+    
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+    
+    
+    
+    
+    
+        <h5>
+<a name="parameters-1" class="anchor" href="#parameters-1"><span class="octicon octicon-link"></span></a>Parameters:</h5>
+        
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<table>
+<thead><tr>
+<th>Name</th>
+        
+        
+        <th>Type</th>
+        
+        
+        
+        
+        
+        <th>Description</th>
+    </tr></thead>
+<tbody>
+<tr>
+<td><code>achievementId</code></td>
+            
+            
+            <td>
+            
+                
+Integer
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
 
+            
+            </td>
+            
+            
+            
+            
+            
+            <td>The achievement number</td>
+        </tr>
+<tr>
+<td><code>callbackFunction</code></td>
+            
+            
+            <td>
+            
+                
+<a href="docs/global.html#responseCallback">responseCallback</a>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td>A callback function that will be triggered when we have the data</td>
+        </tr>
+</tbody>
+</table>
+<dl>
+<dt>Source:</dt>
+    <dd><ul><li>
+        <a href="docs/wowapi.js.html">wowapi.js</a>, <a href="docs/wowapi.js.html#line115">line 115</a>
+    </li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+<h5>
+<a name="example-1" class="anchor" href="#example-1"><span class="octicon octicon-link"></span></a>Example</h5>
+        
+    <pre><code> <code>wowApiInstance.getAchievement(2144, function(data) {console.log(data)});</code></code></pre>
+
+    
+</dd>
+
+        
+            
+<dt>
+    <h4>
+<a name="getauctionsrealm-callbackfunction" class="anchor" href="#getauctionsrealm-callbackfunction"><span class="octicon octicon-link"></span></a>getAuctions(realm, callbackFunction)</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div>
+        Returns the current auction house data for given realm. <a href="docs/http://blizzard.github.io/api-wow-docs/#auction-api%20"> Wraps this API function</a>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        <h5>
+<a name="parameters-2" class="anchor" href="#parameters-2"><span class="octicon octicon-link"></span></a>Parameters:</h5>
+        
+
+<table>
+<thead><tr>
+<th>Name</th>
+        
+        
+        <th>Type</th>
+        
+        
+        
+        
+        
+        <th>Description</th>
+    </tr></thead>
+<tbody>
+<tr>
+<td><code>realm</code></td>
+            
+            
+            <td>
+            
+                
+String
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td>The realm name</td>
+        </tr>
+<tr>
+<td><code>callbackFunction</code></td>
+            
+            
+            <td>
+            
+                
+<a href="docs/global.html#responseCallback">responseCallback</a>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td>A callback function that will be triggered when we have the data</td>
+        </tr>
+</tbody>
+</table>
+<dl>
+<dt>Source:</dt>
+    <dd><ul><li>
+        <a href="docs/wowapi.js.html">wowapi.js</a>, <a href="docs/wowapi.js.html#line126">line 126</a>
+    </li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+<h5>
+<a name="example-2" class="anchor" href="#example-2"><span class="octicon octicon-link"></span></a>Example</h5>
+        
+    <pre><code> <code>wowApiInstance.getAuctions('medivh', function(data) {console.log(data)});</code></code></pre>
+
+    
+</dd>
+
+        
+            
+<dt>
+    <h4>
+<a name="getbattlepetabilityabilityid-callbackfunction" class="anchor" href="#getbattlepetabilityabilityid-callbackfunction"><span class="octicon octicon-link"></span></a>getBattlePetAbility(abilityId, callbackFunction)</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div>
+        Returns details about given ability id. <a href="docs/http://blizzard.github.io/api-wow-docs/#battlepet-api/abilities%20"> Wraps this API function</a>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        <h5>
+<a name="parameters-3" class="anchor" href="#parameters-3"><span class="octicon octicon-link"></span></a>Parameters:</h5>
+        
+
+<table>
+<thead><tr>
+<th>Name</th>
+        
+        
+        <th>Type</th>
+        
+        
+        
+        
+        
+        <th>Description</th>
+    </tr></thead>
+<tbody>
+<tr>
+<td><code>abilityId</code></td>
+            
+            
+            <td>
+            
+                
+Integer
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td></td>
+        </tr>
+<tr>
+<td><code>callbackFunction</code></td>
+            
+            
+            <td>
+            
+                
+<a href="docs/global.html#responseCallback">responseCallback</a>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td>A callback function that will be triggered when we have the data</td>
+        </tr>
+</tbody>
+</table>
+<dl>
+<dt>Source:</dt>
+    <dd><ul><li>
+        <a href="docs/wowapi.js.html">wowapi.js</a>, <a href="docs/wowapi.js.html#line137">line 137</a>
+    </li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+<h5>
+<a name="example-3" class="anchor" href="#example-3"><span class="octicon octicon-link"></span></a>Example</h5>
+        
+    <pre><code> <code>wowApiInstance.getBattlePetAbility(640, function(data) {console.log(data)});</code></code></pre>
+
+    
+</dd>
+
+        
+            
+<dt>
+    <h4>
+<a name="getbattlepetspeciesspeciesid-callbackfunction" class="anchor" href="#getbattlepetspeciesspeciesid-callbackfunction"><span class="octicon octicon-link"></span></a>getBattlePetSpecies(speciesId, callbackFunction)</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div>
+        Returns details about given species id. <a href="docs/http://blizzard.github.io/api-wow-docs/#battlepet-api/species%20"> Wraps this API function</a>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        <h5>
+<a name="parameters-4" class="anchor" href="#parameters-4"><span class="octicon octicon-link"></span></a>Parameters:</h5>
+        
+
+<table>
+<thead><tr>
+<th>Name</th>
+        
+        
+        <th>Type</th>
+        
+        
+        
+        
+        
+        <th>Description</th>
+    </tr></thead>
+<tbody>
+<tr>
+<td><code>speciesId</code></td>
+            
+            
+            <td>
+            
+                
+Integer
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td></td>
+        </tr>
+<tr>
+<td><code>callbackFunction</code></td>
+            
+            
+            <td>
+            
+                
+<a href="docs/global.html#responseCallback">responseCallback</a>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td>A callback function that will be triggered when we have the data</td>
+        </tr>
+</tbody>
+</table>
+<dl>
+<dt>Source:</dt>
+    <dd><ul><li>
+        <a href="docs/wowapi.js.html">wowapi.js</a>, <a href="docs/wowapi.js.html#line148">line 148</a>
+    </li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+<h5>
+<a name="example-4" class="anchor" href="#example-4"><span class="octicon octicon-link"></span></a>Example</h5>
+        
+    <pre><code> <code>wowApiInstance.getBattlePetAbility(640, function(data) {console.log(data)});</code></code></pre>
+
+    
+</dd>
+
+        
+            
+<dt>
+    <h4>
+<a name="getbattlepetstatsspeciesdetails-callbackfunction" class="anchor" href="#getbattlepetstatsspeciesdetails-callbackfunction"><span class="octicon octicon-link"></span></a>getBattlePetStats(speciesDetails, callbackFunction)</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div>
+        Returns details about given battle pet parameters. <a href="docs/http://blizzard.github.io/api-wow-docs/#battlepet-api/stats%20"> Wraps this API function</a>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        <h5>
+<a name="parameters-5" class="anchor" href="#parameters-5"><span class="octicon octicon-link"></span></a>Parameters:</h5>
+        
+
+<table>
+<thead><tr>
+<th>Name</th>
+        
+        
+        <th>Type</th>
+        
+        
+        
+        
+        
+        <th>Description</th>
+    </tr></thead>
+<tbody>
+<tr>
+<td><code>speciesDetails</code></td>
+            
+            
+            <td>
+            
+                
+<a href="docs/global.html#battlePetObject">battlePetObject</a>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td></td>
+        </tr>
+<tr>
+<td><code>callbackFunction</code></td>
+            
+            
+            <td>
+            
+                
+<a href="docs/global.html#responseCallback">responseCallback</a>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td>A callback function that will be triggered when we have the data</td>
+        </tr>
+</tbody>
+</table>
+<dl>
+<dt>Source:</dt>
+    <dd><ul><li>
+        <a href="docs/wowapi.js.html">wowapi.js</a>, <a href="docs/wowapi.js.html#line167">line 167</a>
+    </li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+<h5>
+<a name="example-5" class="anchor" href="#example-5"><span class="octicon octicon-link"></span></a>Example</h5>
+        
+    <pre><code> <code><pre>
+         wowApiInstance.getBattlePetStats({
+             speciesId: 640,
+             level: 25,
+             breedId: 3,
+             qualityId: 1
+         }, function (data) {
+            console.log(data);
+         });</pre></code></code></pre>
+
+    
+</dd>
+
+        
+            
+<dt>
+    <h4>
+<a name="getchallengeleaderboardrealm-callbackfunction" class="anchor" href="#getchallengeleaderboardrealm-callbackfunction"><span class="octicon octicon-link"></span></a>getChallengeLeaderboard(realm, callbackFunction)</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div>
+        Returns the current challenge mode leaderboard for given realm or for region. <a href="docs/http://blizzard.github.io/api-wow-docs/#challenge-mode-api%20"> Wraps this API function</a>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        <h5>
+<a name="parameters-6" class="anchor" href="#parameters-6"><span class="octicon octicon-link"></span></a>Parameters:</h5>
+        
+
+<table>
+<thead><tr>
+<th>Name</th>
+        
+        
+        <th>Type</th>
+        
+        
+        
+        
+        
+        <th>Description</th>
+    </tr></thead>
+<tbody>
+<tr>
+<td><code>realm</code></td>
+            
+            
+            <td>
+            
+                
+String
+|
+
+null
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td>The realm name. If it is null, it will return region leaderboard</td>
+        </tr>
+<tr>
+<td><code>callbackFunction</code></td>
+            
+            
+            <td>
+            
+                
+<a href="docs/global.html#responseCallback">responseCallback</a>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td>A callback function that will be triggered when we have the data</td>
+        </tr>
+</tbody>
+</table>
+<dl>
+<dt>Source:</dt>
+    <dd><ul><li>
+        <a href="docs/wowapi.js.html">wowapi.js</a>, <a href="docs/wowapi.js.html#line184">line 184</a>
+    </li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+<h5>
+<a name="example-6" class="anchor" href="#example-6"><span class="octicon octicon-link"></span></a>Example</h5>
+        
+    <pre><code> <code>wowApiInstance.getChallengeLeaderboard("steamwheedle-cartel", function (data) {console.log(data);});<br>
+wowApiInstance.getChallengeLeaderboard(null, function (data) {console.log(data);});
+</code></code></pre>
+
+    
+</dd>
+
+        
+            
+<dt>
+    <h4>
+<a name="getcharacterprofilecharacteroptions-callbackfunction" class="anchor" href="#getcharacterprofilecharacteroptions-callbackfunction"><span class="octicon octicon-link"></span></a>getCharacterProfile(characterOptions, callbackFunction)</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div>
+        Returns character profile based on a characterOptions object. <a href="docs/http://blizzard.github.io/api-wow-docs/#character-profile-api%20"> Wraps this API function</a>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        <h5>
+<a name="parameters-7" class="anchor" href="#parameters-7"><span class="octicon octicon-link"></span></a>Parameters:</h5>
+        
+
+<table>
+<thead><tr>
+<th>Name</th>
+        
+        
+        <th>Type</th>
+        
+        
+        
+        
+        
+        <th>Description</th>
+    </tr></thead>
+<tbody>
+<tr>
+<td><code>characterOptions</code></td>
+            
+            
+            <td>
+            
+                
+<a href="docs/global.html#characterOptions">characterOptions</a>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td>Contains the options describing what to retrieve</td>
+        </tr>
+<tr>
+<td><code>callbackFunction</code></td>
+            
+            
+            <td>
+            
+                
+<a href="docs/global.html#responseCallback">responseCallback</a>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td>A callback function that will be triggered when we have the data</td>
+        </tr>
+</tbody>
+</table>
+<dl>
+<dt>Source:</dt>
+    <dd><ul><li>
+        <a href="docs/wowapi.js.html">wowapi.js</a>, <a href="docs/wowapi.js.html#line202">line 202</a>
+    </li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+<h5>
+<a name="example-7" class="anchor" href="#example-7"><span class="octicon octicon-link"></span></a>Example</h5>
+        
+    <pre><code> <code>wowApiInstance.getCharacterProfile({realm: "steamwheedle-cartel",characterName: "HarapAlb"}, function (data) {console.log(data);});<br>
+wowApiInstance.getCharacterProfile({realm: "steamwheedle-cartel",characterName: "HarapAlb",fields: "items"}, function (data) { console.log(data); });<br>
+wowApiInstance.getCharacterProfile({realm: "steamwheedle-cartel", characterName: "HarapAlb", fields: "items, pets, stats, titles"}, function (data) {console.log(data);});<br></code></code></pre>
+
+    
+</dd>
+
+        
+            
+<dt>
+    <h4>
+<a name="getguildprofileguildoptions-callbackfunction" class="anchor" href="#getguildprofileguildoptions-callbackfunction"><span class="octicon octicon-link"></span></a>getGuildProfile(guildOptions, callbackFunction)</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div>
+        Returns guild profile based on a guildOptions object. <a href="docs/http://blizzard.github.io/api-wow-docs/#guild-profile-api%20"> Wraps this API function</a>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        <h5>
+<a name="parameters-8" class="anchor" href="#parameters-8"><span class="octicon octicon-link"></span></a>Parameters:</h5>
+        
+
+<table>
+<thead><tr>
+<th>Name</th>
+        
+        
+        <th>Type</th>
+        
+        
+        
+        
+        
+        <th>Description</th>
+    </tr></thead>
+<tbody>
+<tr>
+<td><code>guildOptions</code></td>
+            
+            
+            <td>
+            
+                
+<a href="docs/global.html#guildOptions">guildOptions</a>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td>Contains the options describing what to retrieve</td>
+        </tr>
+<tr>
+<td><code>callbackFunction</code></td>
+            
+            
+            <td>
+            
+                
+<a href="docs/global.html#responseCallback">responseCallback</a>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td>A callback function that will be triggered when we have the data</td>
+        </tr>
+</tbody>
+</table>
+<dl>
+<dt>Source:</dt>
+    <dd><ul><li>
+        <a href="docs/wowapi.js.html">wowapi.js</a>, <a href="docs/wowapi.js.html#line256">line 256</a>
+    </li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+<h5>
+<a name="example-8" class="anchor" href="#example-8"><span class="octicon octicon-link"></span></a>Example</h5>
+        
+    <pre><code> <code><pre>
+         wowApiInstance.getGuildProfile({
+             realm: "steamwheedle-cartel",
+             guildName: "House of Elements"
+         }, function (data) {
+            console.log(data);
+         });<br>
+         wowApiInstance.getGuildProfile({
+             realm: "steamwheedle-cartel",
+             guildName: "House of Elements",
+             fields: "members, achievements, news, challenge"
+         }, function (data) {
+            console.log(data);
+         });
+</pre></code></code></pre>
+
+    
+</dd>
+
+        
+            
+<dt>
+    <h4>
+<a name="getiemsetsetid-callbackfunction" class="anchor" href="#getiemsetsetid-callbackfunction"><span class="octicon octicon-link"></span></a>getIemSet(setId, callbackFunction)</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div>
+        Returns details about given item set id. <a href="docs/http://blizzard.github.io/api-wow-docs/#item-api/item-set%20"> Wraps this API function</a>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        <h5>
+<a name="parameters-9" class="anchor" href="#parameters-9"><span class="octicon octicon-link"></span></a>Parameters:</h5>
+        
+
+<table>
+<thead><tr>
+<th>Name</th>
+        
+        
+        <th>Type</th>
+        
+        
+        
+        
+        
+        <th>Description</th>
+    </tr></thead>
+<tbody>
+<tr>
+<td><code>setId</code></td>
+            
+            
+            <td>
+            
+                
+Integer
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td></td>
+        </tr>
+<tr>
+<td><code>callbackFunction</code></td>
+            
+            
+            <td>
+            
+                
+<a href="docs/global.html#responseCallback">responseCallback</a>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td>A callback function that will be triggered when we have the data</td>
+        </tr>
+</tbody>
+</table>
+<dl>
+<dt>Source:</dt>
+    <dd><ul><li>
+        <a href="docs/wowapi.js.html">wowapi.js</a>, <a href="docs/wowapi.js.html#line231">line 231</a>
+    </li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+<h5>
+<a name="example-9" class="anchor" href="#example-9"><span class="octicon octicon-link"></span></a>Example</h5>
+        
+    <pre><code> <code>wowApiInstance.getItem(1060, function(data) {console.log(data)});</code></code></pre>
+
+    
+</dd>
+
+        
+            
+<dt>
+    <h4>
+<a name="getitemitemid-callbackfunction" class="anchor" href="#getitemitemid-callbackfunction"><span class="octicon octicon-link"></span></a>getItem(itemId, callbackFunction)</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div>
+        Returns details about given item id. <a href="docs/http://blizzard.github.io/api-wow-docs/#item-api/individual-item%20"> Wraps this API function</a>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        <h5>
+<a name="parameters-10" class="anchor" href="#parameters-10"><span class="octicon octicon-link"></span></a>Parameters:</h5>
+        
+
+<table>
+<thead><tr>
+<th>Name</th>
+        
+        
+        <th>Type</th>
+        
+        
+        
+        
+        
+        <th>Description</th>
+    </tr></thead>
+<tbody>
+<tr>
+<td><code>itemId</code></td>
+            
+            
+            <td>
+            
+                
+Integer
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td></td>
+        </tr>
+<tr>
+<td><code>callbackFunction</code></td>
+            
+            
+            <td>
+            
+                
+<a href="docs/global.html#responseCallback">responseCallback</a>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td>A callback function that will be triggered when we have the data</td>
+        </tr>
+</tbody>
+</table>
+<dl>
+<dt>Source:</dt>
+    <dd><ul><li>
+        <a href="docs/wowapi.js.html">wowapi.js</a>, <a href="docs/wowapi.js.html#line220">line 220</a>
+    </li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+<h5>
+<a name="example-10" class="anchor" href="#example-10"><span class="octicon octicon-link"></span></a>Example</h5>
+        
+    <pre><code> <code>wowApiInstance.getItem(18803, function(data) {console.log(data)});</code></code></pre>
+
+    
+</dd>
+
+        
+            
+<dt>
+    <h4>
+<a name="getpvpleaderboardbracket-callbackfunction" class="anchor" href="#getpvpleaderboardbracket-callbackfunction"><span class="octicon octicon-link"></span></a>getPVPLeaderboard(bracket, callbackFunction)</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div>
+        Returns the PVP leaderboard for given bracket. <a href="docs/http://blizzard.github.io/api-wow-docs/#pvp-api%20"> Wraps this API function</a>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        <h5>
+<a name="parameters-11" class="anchor" href="#parameters-11"><span class="octicon octicon-link"></span></a>Parameters:</h5>
+        
+
+<table>
+<thead><tr>
+<th>Name</th>
+        
+        
+        <th>Type</th>
+        
+        
+        
+        
+        
+        <th>Description</th>
+    </tr></thead>
+<tbody>
+<tr>
+<td><code>bracket</code></td>
+            
+            
+            <td>
+            
+                
+String
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td>The bracket for the leaderborad. One of: "2v2" | "3v3" | "5v5" | "rbg"</td>
+        </tr>
+<tr>
+<td><code>callbackFunction</code></td>
+            
+            
+            <td>
+            
+                
+<a href="docs/global.html#responseCallback">responseCallback</a>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td>A callback function that will be triggered when we have the data</td>
+        </tr>
+</tbody>
+</table>
+<dl>
+<dt>Source:</dt>
+    <dd><ul><li>
+        <a href="docs/wowapi.js.html">wowapi.js</a>, <a href="docs/wowapi.js.html#line274">line 274</a>
+    </li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+<h5>
+<a name="example-11" class="anchor" href="#example-11"><span class="octicon octicon-link"></span></a>Example</h5>
+        
+    <pre><code> <code>wowApiInstance.getPVPLeaderboard("3v3", function (data) { console.log(data); });</code></code></pre>
+
+    
+</dd>
+
+        
+            
+<dt>
+    <h4>
+<a name="getrealmstatusrealms-callbackfunction" class="anchor" href="#getrealmstatusrealms-callbackfunction"><span class="octicon octicon-link"></span></a>getRealmStatus(realms, callbackFunction)</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div>
+        Returns the realm(s) status. <a href="docs/http://blizzard.github.io/api-wow-docs/#realm-status-api%20"> Wraps this API function</a>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        <h5>
+<a name="parameters-12" class="anchor" href="#parameters-12"><span class="octicon octicon-link"></span></a>Parameters:</h5>
+        
+
+<table>
+<thead><tr>
+<th>Name</th>
+        
+        
+        <th>Type</th>
+        
+        
+        
+        
+        
+        <th>Description</th>
+    </tr></thead>
+<tbody>
+<tr>
+<td><code>realms</code></td>
+            
+            
+            <td>
+            
+                
+String
+|
+
+null
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td>The list of realms to get status, or null for all realms from region</td>
+        </tr>
+<tr>
+<td><code>callbackFunction</code></td>
+            
+            
+            <td>
+            
+                
+<a href="docs/global.html#responseCallback">responseCallback</a>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td>A callback function that will be triggered when we have the data</td>
+        </tr>
+</tbody>
+</table>
+<dl>
+<dt>Source:</dt>
+    <dd><ul><li>
+        <a href="docs/wowapi.js.html">wowapi.js</a>, <a href="docs/wowapi.js.html#line292">line 292</a>
+    </li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+<h5>
+<a name="example-12" class="anchor" href="#example-12"><span class="octicon octicon-link"></span></a>Example</h5>
+        
+    <pre><code> <code><pre>
+          wowApiInstance.getRealmStatus(null, function (data) {
+             console.log(data);
+          });<br>
+          wow.getRealmStatus("steamwheedle-cartel,medivh", function (data) {
+             console.log(data);
+          });
+</pre></code></code></pre>
+
+    
+</dd>
+
+        
+            
+<dt>
+    <h4>
+<a name="getreciperecipeid-callbackfunction" class="anchor" href="#getreciperecipeid-callbackfunction"><span class="octicon octicon-link"></span></a>getRecipe(recipeId, callbackFunction)</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div>
+        Returns details about given recipe id. <a href="docs/http://blizzard.github.io/api-wow-docs/#recipe-api%20"> Wraps this API function</a>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        <h5>
+<a name="parameters-13" class="anchor" href="#parameters-13"><span class="octicon octicon-link"></span></a>Parameters:</h5>
+        
+
+<table>
+<thead><tr>
+<th>Name</th>
+        
+        
+        <th>Type</th>
+        
+        
+        
+        
+        
+        <th>Description</th>
+    </tr></thead>
+<tbody>
+<tr>
+<td><code>recipeId</code></td>
+            
+            
+            <td>
+            
+                
+Integer
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td></td>
+        </tr>
+<tr>
+<td><code>callbackFunction</code></td>
+            
+            
+            <td>
+            
+                
+<a href="docs/global.html#responseCallback">responseCallback</a>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td>A callback function that will be triggered when we have the data</td>
+        </tr>
+</tbody>
+</table>
+<dl>
+<dt>Source:</dt>
+    <dd><ul><li>
+        <a href="docs/wowapi.js.html">wowapi.js</a>, <a href="docs/wowapi.js.html#line307">line 307</a>
+    </li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+<h5>
+<a name="example-13" class="anchor" href="#example-13"><span class="octicon octicon-link"></span></a>Example</h5>
+        
+    <pre><code> <code>wowApiInstance.getRecipe(33994, function(data) {console.log(data)});</code></code></pre>
+
+    
+</dd>
+
+        
+            
+<dt>
+    <h4>
+<a name="getspellspellid-callbackfunction" class="anchor" href="#getspellspellid-callbackfunction"><span class="octicon octicon-link"></span></a>getSpell(spellId, callbackFunction)</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div>
+        Returns details about spell recipe id. <a href="docs/http://blizzard.github.io/api-wow-docs/#spell-api%20"> Wraps this API function</a>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        <h5>
+<a name="parameters-14" class="anchor" href="#parameters-14"><span class="octicon octicon-link"></span></a>Parameters:</h5>
+        
+
+<table>
+<thead><tr>
+<th>Name</th>
+        
+        
+        <th>Type</th>
+        
+        
+        
+        
+        
+        <th>Description</th>
+    </tr></thead>
+<tbody>
+<tr>
+<td><code>spellId</code></td>
+            
+            
+            <td>
+            
+                
+Integer
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td></td>
+        </tr>
+<tr>
+<td><code>callbackFunction</code></td>
+            
+            
+            <td>
+            
+                
+<a href="docs/global.html#responseCallback">responseCallback</a>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td>A callback function that will be triggered when we have the data</td>
+        </tr>
+</tbody>
+</table>
+<dl>
+<dt>Source:</dt>
+    <dd><ul><li>
+        <a href="docs/wowapi.js.html">wowapi.js</a>, <a href="docs/wowapi.js.html#line318">line 318</a>
+    </li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+<h5>
+<a name="example-14" class="anchor" href="#example-14"><span class="octicon octicon-link"></span></a>Example</h5>
+        
+    <pre><code> <code>wowApiInstance.getSpell(8056, function(data) {console.log(data)});</code></code></pre>
+
+    
+</dd>
+
+        </dl>
 <h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<a name="type-definitions" class="anchor" href="#type-definitions"><span class="octicon octicon-link"></span></a>Type Definitions</h3>
+        
+        <dl>
+<dt>
+    <h4>
+<a name="battlepetobject" class="anchor" href="#battlepetobject"><span class="octicon octicon-link"></span></a>battlePetObject</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    
+        <h5>
+<a name="type" class="anchor" href="#type"><span class="octicon octicon-link"></span></a>Type:</h5>
+        <ul>
+<li>
+                
+Object
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+            </li>
+        </ul>
+<dl>
+<h5>
+<a name="properties" class="anchor" href="#properties"><span class="octicon octicon-link"></span></a>Properties:</h5>
+        
+        <dl><table>
+<thead><tr>
+<th>Name</th>
+        
+        
+        <th>Type</th>
+        
+        
+        <th>Argument</th>
+        
+        
+        
+        <th>Default</th>
+        
+        
+        <th>Description</th>
+    </tr></thead>
+<tbody>
+<tr>
+<td><code>speciesId</code></td>
+            
+            
+            <td>
+            
+                
+Integer
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+            
+            </td>
+            
+            
+                <td>
+                
+                    
+                
+                </td>
+            
+            
+            
+                <td>
+                
+                </td>
+            
+            
+            <td>SpeciesId for what we want the stats</td>
+        </tr>
+<tr>
+<td><code>level</code></td>
+            
+            
+            <td>
+            
+                
+Integer
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+            
+            </td>
+            
+            
+                <td>
+                
+                    &lt;optional&gt;<br>
+</td>
+            
+            
+            
+                <td>
+                
+                    1
+                
+                </td>
+            
+            
+            <td>Level of the pet to display stats</td>
+        </tr>
+<tr>
+<td><code>breedId</code></td>
+            
+            
+            <td>
+            
+                
+Integer
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+
+            
+            </td>
+            
+            
+                <td>
+                
+                    &lt;optional&gt;<br>
+</td>
+            
+            
+            
+                <td>
+                
+                    3
+                
+                </td>
+            
+            
+            <td>Specify the breed</td>
+        </tr>
+<tr>
+<td><code>qualityId</code></td>
+            
+            
+            <td>
+            
+                
+Integer
+
+
+            
+            </td>
+            
+            
+                <td>
+                
+                    &lt;optional&gt;<br>
+</td>
+            
+            
+            
+                <td>
+                
+                    1
+                
+                </td>
+            
+            
+            <td>Specify quality</td>
+        </tr>
+</tbody>
+</table></dl>
+<dt>Source:</dt>
+    <dd><ul><li>
+        <a href="docs/wowapi.js.html">wowapi.js</a>, <a href="docs/wowapi.js.html#line344">line 344</a>
+    </li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+</dd>
+
+            
+                
+<dt>
+    <h4>
+<a name="characteroptions" class="anchor" href="#characteroptions"><span class="octicon octicon-link"></span></a>characterOptions</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    
+        <h5>
+<a name="type-1" class="anchor" href="#type-1"><span class="octicon octicon-link"></span></a>Type:</h5>
+        <ul>
+<li>
+                
+Object
+
+
+            </li>
+        </ul>
+<dl>
+<h5>
+<a name="properties-1" class="anchor" href="#properties-1"><span class="octicon octicon-link"></span></a>Properties:</h5>
+        
+        <dl><table>
+<thead><tr>
+<th>Name</th>
+        
+        
+        <th>Type</th>
+        
+        
+        <th>Argument</th>
+        
+        
+        
+        <th>Default</th>
+        
+        
+        <th>Description</th>
+    </tr></thead>
+<tbody>
+<tr>
+<td><code>realm</code></td>
+            
+            
+            <td>
+            
+                
+String
+
+
+            
+            </td>
+            
+            
+                <td>
+                
+                    
+                
+                </td>
+            
+            
+            
+                <td>
+                
+                </td>
+            
+            
+            <td>Realm name</td>
+        </tr>
+<tr>
+<td><code>characterName</code></td>
+            
+            
+            <td>
+            
+                
+String
+
+
+            
+            </td>
+            
+            
+                <td>
+                
+                    
+                
+                </td>
+            
+            
+            
+                <td>
+                
+                </td>
+            
+            
+            <td>Character name</td>
+        </tr>
+<tr>
+<td><code>fields</code></td>
+            
+            
+            <td>
+            
+                
+String
+
+
+            
+            </td>
+            
+            
+                <td>
+                
+                    &lt;optional&gt;<br>
+</td>
+            
+            
+            
+                <td>
+                
+                    ""
+                
+                </td>
+            
+            
+            <td>String with one or more fields from the profile separated by comma.
+If it is missing, only the summary will be returned.
+Possible values:
+<pre>
+achievements    A map of achievement data including completion timestamps and criteria information.
+appearance    A map of values that describes the face, features and helm/cloak display preferences and attributes.
+feed    The activity feed of the character.
+guild    A summary of the guild that the character belongs to. If the character does not belong to a guild and this field is requested, this field will not be exposed.
+hunterPets    A list of all of the combat pets obtained by the character.
+items    A list of items equiped by the character. Use of this field will also include the average item level and average item level equipped for the character.
+mounts    A list of all of the mounts obtained by the character.
+pets    A list of the battle pets obtained by the character.
+petSlots    Data about the current battle pet slots on this characters account.
+professions    A list of the character's professions. It is important to note that when this information is retrieved, it will also include the known recipes of each of the listed professions.
+progression    A list of raids and bosses indicating raid progression and completedness.
+pvp    A map of pvp information including arena team membership and rated battlegrounds information.
+quests    A list of quests completed by the character.
+reputation    A list of the factions that the character has an associated reputation with.
+stats    A map of character attributes and stats.
+talents    A list of talent structures.
+titles    A list of the titles obtained by the character including the currently selected title.
+     </pre>
+</td>
+        </tr>
+</tbody>
+</table></dl>
+<dt>Source:</dt>
+    <dd><ul><li>
+        <a href="docs/wowapi.js.html">wowapi.js</a>, <a href="docs/wowapi.js.html#line346">line 346</a>
+    </li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+</dd>
+
+            
+                
+<dt>
+    <h4>
+<a name="guildoptions" class="anchor" href="#guildoptions"><span class="octicon octicon-link"></span></a>guildOptions</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    
+        <h5>
+<a name="type-2" class="anchor" href="#type-2"><span class="octicon octicon-link"></span></a>Type:</h5>
+        <ul>
+<li>
+                
+Object
+
+
+            </li>
+        </ul>
+<dl>
+<h5>
+<a name="properties-2" class="anchor" href="#properties-2"><span class="octicon octicon-link"></span></a>Properties:</h5>
+        
+        <dl><table>
+<thead><tr>
+<th>Name</th>
+        
+        
+        <th>Type</th>
+        
+        
+        <th>Argument</th>
+        
+        
+        
+        <th>Default</th>
+        
+        
+        <th>Description</th>
+    </tr></thead>
+<tbody>
+<tr>
+<td><code>realm</code></td>
+            
+            
+            <td>
+            
+                
+String
+
+
+            
+            </td>
+            
+            
+                <td>
+                
+                    
+                
+                </td>
+            
+            
+            
+                <td>
+                
+                </td>
+            
+            
+            <td>Realm name</td>
+        </tr>
+<tr>
+<td><code>guildName</code></td>
+            
+            
+            <td>
+            
+                
+String
+
+
+            
+            </td>
+            
+            
+                <td>
+                
+                    
+                
+                </td>
+            
+            
+            
+                <td>
+                
+                </td>
+            
+            
+            <td>Guild name</td>
+        </tr>
+<tr>
+<td><code>fields</code></td>
+            
+            
+            <td>
+            
+                
+String
+
+
+            
+            </td>
+            
+            
+                <td>
+                
+                    &lt;optional&gt;<br>
+</td>
+            
+            
+            
+                <td>
+                
+                    ""
+                
+                </td>
+            
+            
+            <td>String with one or more fields from the profile separated by comma.
+If it is missing, only the summary will be returned.
+Possible values:
+<pre>
+members    A list of characters that are a member of the guild
+achievements    A set of data structures that describe the achievements earned by the guild.
+news    A set of data structures that describe the news feed of the guild.
+challenge    The top 3 challenge mode guild run times for each challenge mode map.
+     </pre>
+</td>
+        </tr>
+</tbody>
+</table></dl>
+<dt>Source:</dt>
+    <dd><ul><li>
+        <a href="docs/wowapi.js.html">wowapi.js</a>, <a href="docs/wowapi.js.html#line348">line 348</a>
+    </li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+</dd>
+
+            
+                
+<dt>
+    <h4>
+<a name="responsecallbackdata" class="anchor" href="#responsecallbackdata"><span class="octicon octicon-link"></span></a>responseCallback(data)</h4>
+    
+    
+</dt>
+<dd>
+    
+    
+
+    
+    
+    
+    
+    
+        <h5>
+<a name="parameters-15" class="anchor" href="#parameters-15"><span class="octicon octicon-link"></span></a>Parameters:</h5>
+        
+
+<table>
+<thead><tr>
+<th>Name</th>
+        
+        
+        <th>Type</th>
+        
+        
+        
+        
+        
+        <th>Description</th>
+    </tr></thead>
+<tbody><tr>
+<td><code>data</code></td>
+            
+            
+            <td>
+            
+                
+JSON
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td>JSON containing requested data</td>
+        </tr></tbody>
+</table>
+<dl>
+<dt>Source:</dt>
+    <dd><ul><li>
+        <a href="docs/wowapi.js.html">wowapi.js</a>, <a href="docs/wowapi.js.html#line342">line 342</a>
+    </li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+</dd>
+
+            </dl>  </div>
+
+<p> <h2>
+<a name="index" class="anchor" href="#index"><span class="octicon octicon-link"></span></a><a href="docs/index.html">Index</a>
+</h2><h3>
+<a name="classes" class="anchor" href="#classes"><span class="octicon octicon-link"></span></a>Classes</h3><ul><li><a href="docs/WOWAPI.html">WOWAPI</a></li></ul><h3>
+<a name="global" class="anchor" href="#global"><span class="octicon octicon-link"></span></a>Global</h3><ul>
+<li><a href="docs/global.html#getAchievement">getAchievement</a></li>
+<li><a href="docs/global.html#getAuctions">getAuctions</a></li>
+<li><a href="docs/global.html#getBattlePetAbility">getBattlePetAbility</a></li>
+<li><a href="docs/global.html#getBattlePetSpecies">getBattlePetSpecies</a></li>
+<li><a href="docs/global.html#getBattlePetStats">getBattlePetStats</a></li>
+<li><a href="docs/global.html#getChallengeLeaderboard">getChallengeLeaderboard</a></li>
+<li><a href="docs/global.html#getCharacterProfile">getCharacterProfile</a></li>
+<li><a href="docs/global.html#getGuildProfile">getGuildProfile</a></li>
+<li><a href="docs/global.html#getIemSet">getIemSet</a></li>
+<li><a href="docs/global.html#getItem">getItem</a></li>
+<li><a href="docs/global.html#getPVPLeaderboard">getPVPLeaderboard</a></li>
+<li><a href="docs/global.html#getRealmStatus">getRealmStatus</a></li>
+<li><a href="docs/global.html#getRecipe">getRecipe</a></li>
+<li><a href="docs/global.html#getSpell">getSpell</a></li>
+</ul> </p>
+
+<p><br clear="both"></p>
+
+<p> 
+    Documentation generated by <a href="docs/https://github.com/jsdoc3/jsdoc">JSDoc 3.3.0-dev</a> on Mon Nov 04 2013 17:42:42 GMT+0100 (CET)
+ </p>
+
+<p>
+</p>
       </section>
     </div>
 
